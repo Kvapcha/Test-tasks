@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тестовое задание</title>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Фильтры</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input class="form-control" type="text" placeholder="Поиск" id="search-text" onkeyup="tableSearch()">
+            <a href="#info-table">Все</a>
+            <a href="#1">Дата</a>
+            <a href="#2">Название маршрута</a>
+            <a href="#3">Количество</a>
+            <a href="#4">Расстояние</a>
+        </div>
+    </div>
+
+    <div class="block">
+        <table id="info-table">
+            <thead>
+                <tr>
+                    <th id="1">Дата</th>
+                    <th id="2">Название маршрута</th>
+                    <th id="3" data-type="number">Количество</th>
+                    <th id="4" data-type="number">Расстояние км</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>03.11.2009</td>
+                    <td>Ируктс-Москва</td>
+                    <td>1</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>11.08.2002</td>
+                    <td>Балашиха-Железнодорожный</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>31.03.2022</td>
+                    <td>Астана-Санкт-Петербург</td>
+                    <td>1</td>
+                    <td>3467</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
